@@ -1,10 +1,12 @@
 import React from 'react'
-import BasicMotion from './components/BasicMotion'
+import BasicMotion from '../../components/BasicMotion'
+import Gesture from '@/components/Gesture'
 
 function MainPage() {
   return (
     <div>
-      <BasicMotion />
+      {/* <BasicMotion /> */}
+      <Gesture />
     </div>
   )
 }
