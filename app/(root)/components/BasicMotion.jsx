@@ -1,10 +1,22 @@
-
+"use client"
+import {motion} from 'framer-motion'
 function BasicMotion() {
   return (
     <div className="flex w-full items-center justify-center h-screen gap-3">
-        <div className="w-36 h-36 bg-black">
+        <motion.div 
+        initial={{
+            rotate:"0deg"
+        }}
+        animate={{
+            rotate:"180deg"
+        }}
 
-        </div>
+        transition={{
+            duration:1,
+            ease:'anticipate'
+        }}
+        className="w-36 h-36 bg-black">
+        </motion.div>
     </div>
   )
 }
